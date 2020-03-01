@@ -1,12 +1,12 @@
 katz_deli = ["Ada", "Grace", "Kent"]
 
 def line(array)
-  current_line = "The line is currently:"
+  current_line = []
   if array.length >=1
     array.each_with_index do |customer , position|
       current_line << " #{position + 1}.#{customer}"
     end
-    puts current_line
+    puts  "The line is currently: #{current_line.join("")}"
   else
     puts  "The line is currently empty."
   end
