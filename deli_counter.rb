@@ -1,4 +1,4 @@
-katz_deli = ["calvin","Harold"]
+katz_deli = []
 
 def line(array)
   current_line = "The line is currently:"
@@ -23,3 +23,16 @@ def take_a_number(line,new_customer)
 
 end
 take_a_number(katz_deli,"miguel")
+
+
+
+
+def now_serving(line)
+  if line.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line[0]}."
+  end
+end
+
+now_serving(katz_deli)
