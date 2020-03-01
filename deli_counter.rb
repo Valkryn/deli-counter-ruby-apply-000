@@ -2,6 +2,7 @@ katz_deli = ["Ada", "Grace", "Kent"]
 
 def line(array)
   current_line = "The line is currently: "
+  customer =[]
   if array.length >=1
     array.each_with_index do |customer , position|
       current_line << " #{position + 1}.#{customer}"
