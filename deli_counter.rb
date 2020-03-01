@@ -20,7 +20,6 @@ line(katz_deli)
 def take_a_number(line,new_customer)
   line << "#{new_customer}"
   puts "Welcome, #{new_customer}. You are number #{line.length} in line."
-
 end
 take_a_number(katz_deli,"Miguel")
 
