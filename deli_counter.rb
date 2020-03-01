@@ -3,8 +3,8 @@ katz_deli = ["Ada", "Grace", "Kent"]
 def line(array)
   current_line = "The line is currently:"
   if array.length >=1
-    array.each_with_index do |customer , position|
-      current_line << " #{position + 1}.#{customer}"
+    array.each_with_index do |customer , index|
+      current_line << " #{index + 1}.#{customer}"
     end
     puts current_line
   else
@@ -22,7 +22,7 @@ def take_a_number(line,new_customer)
   puts "Welcome, #{new_customer}. You are number #{line.length} in line."
 
 end
-take_a_number(katz_deli,"miguel")
+take_a_number(katz_deli,"Miguel")
 
 
 
