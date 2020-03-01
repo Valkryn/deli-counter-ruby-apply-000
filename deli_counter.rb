@@ -7,7 +7,7 @@ def line(array)
     array.each_with_index do |customer , position|
       customer << " #{position + 1}.#{customer}"
     end
-    puts current_line + customer.join
+    puts current_line + customer.join("")
   else
     puts  "The line is currently empty."
   end
