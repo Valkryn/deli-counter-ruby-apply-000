@@ -5,7 +5,7 @@ def line(array)
   customer =[]
   if array.length >=1
     array.each_with_index do |customer , position|
-      current_line << " #{position + 1}.#{customer}"
+      customer << " #{position + 1}.#{customer}"
     end
     puts current_line
   else
