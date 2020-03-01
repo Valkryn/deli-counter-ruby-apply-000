@@ -1,4 +1,4 @@
-katz_deli = ["ada", "grace"]
+katz_deli = ["calvin","Harold"]
 
 def line(array)
   current_line = "The line is currently:"
@@ -13,3 +13,13 @@ def line(array)
 end
 
 line(katz_deli)
+
+
+
+
+def take_a_number(line,new_customer)
+  line << "#{new_customer}"
+  puts "Welcome, #{new_customer}. You are number #{line.length} in line."
+
+end
+take_a_number(katz_deli,"miguel")
