@@ -1,4 +1,4 @@
-katz_deli = []
+katz_deli = ["Ada", "Grace", "Kent"]
 
 def line(array)
   current_line = "The line is currently:"
